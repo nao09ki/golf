@@ -1,0 +1,57 @@
+<h1>GolfTwitter</h1>
+<div class="tweet">
+  日付:<%= @tweet.date %> <br>
+  場所:<%= @tweet.place %> <br>
+  <table border="1">
+   <tr>
+    <th colspan="19">スコア一覧</th>
+   </tr>
+   <tr>
+    <td>No.1</td>
+    <td>No.2</td>
+    <td>No.3</td>
+    <td>No.4</td>
+    <td>No.5</td>
+    <td>No.6</td>
+    <td>No.7</td>
+    <td>No.8</td>
+    <td>No.9</td>
+    <td>No.10</td>
+    <td>No.11</td>
+    <td>No.12</td>
+    <td>No.13</td>
+    <td>No.14</td>
+    <td>No.15</td>
+    <td>No.16</td>
+    <td>No.17</td>
+    <td>No.18</td>
+    <td>合計</td>
+   </tr>
+   <tr>
+  <td><%= @tweet.score1 %></td>
+  <td><%= @tweet.score2 %></td>
+  <td><%= @tweet.score3 %></td>
+  <td><%= @tweet.score4 %></td>
+  <td><%= @tweet.score5 %></td>
+  <td><%= @tweet.score6 %></td>
+  <td><%= @tweet.score7 %></td>
+  <td><%= @tweet.score8 %></td>
+  <td><%= @tweet.score9 %></td>
+  <td><%= @tweet.score10 %></td>
+  <td><%= @tweet.score11 %></td>
+  <td><%= @tweet.score12 %></td>
+  <td><%= @tweet.score13 %></td>
+  <td><%= @tweet.score14 %></td>
+  <td><%= @tweet.score15 %></td>
+  <td><%= @tweet.score16 %></td>
+  <td><%= @tweet.score17 %></td>
+  <td><%= @tweet.score18 %></td>
+  <td><%= @tweet.scoresum %></td>
+   </tr>
+  </table>
+  良い点:<%= @tweet.good %> <br>
+  悪い点:<%= @tweet.more %> <br>
+</div>
+
+<%= link_to "Tweet一覧に戻る", tweets_path %>
+<%= link_to "編集する", edit_tweet_path(@tweet.id) %>

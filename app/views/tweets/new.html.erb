@@ -1,0 +1,53 @@
+<h1>GeekTwitter</h1>
+<h3>新規Tweet</h3>
+<%= form_for @tweet do |f| %>
+  <div class="field">
+  <%= f.label :date %> <br>
+  <%= f.date_field :date, :size => 140 , required: true %> <br>
+  <%= f.label :place %> <br>
+  <%= f.text_field :place, :size => 140 , required: true %> <br>
+  <%= f.label :score1 %> <br>
+  <%= f.number_field :score1, :size => 140 , value:0 , required: true %> <br>
+  <%= f.label :score2 %> <br>
+  <%= f.number_field :score2, :size => 140 , value:0 , required: true %> <br>
+  <%= f.label :score3 %> <br>
+  <%= f.number_field :score3, :size => 140 , value:0 , required: true %> <br>
+  <%= f.label :score4 %> <br>
+  <%= f.number_field :score4, :size => 140 , value:0 , required: true %> <br>
+  <%= f.label :score5 %> <br>
+  <%= f.number_field :score5, :size => 140 , value:0 , required: true %> <br>
+  <%= f.label :score6 %> <br>
+  <%= f.number_field :score6, :size => 140 , value:0 , required: true %> <br>
+  <%= f.label :score7 %> <br>
+  <%= f.number_field :score7, :size => 140 , value:0 , required: true %> <br>
+  <%= f.label :score8 %> <br>
+  <%= f.number_field :score8, :size => 140 , value:0 , required: true %> <br>
+  <%= f.label :score9 %> <br>
+  <%= f.number_field :score9, :size => 140 , value:0 , required: true %> <br>
+  <%= f.label :score10 %> <br>
+  <%= f.number_field :score10, :size => 140 , value:0 , required: true %> <br>
+  <%= f.label :score11 %> <br>
+  <%= f.number_field :score11, :size => 140 , value:0 , required: true %> <br>
+  <%= f.label :score12 %> <br>
+  <%= f.number_field :score12, :size => 140 , value:0 , required: true %> <br>
+  <%= f.label :score13 %> <br>
+  <%= f.number_field :score13, :size => 140 , value:0 , required: true %> <br>
+  <%= f.label :score14 %> <br>
+  <%= f.number_field :score14, :size => 140 , value:0 , required: true %> <br>
+  <%= f.label :score15 %> <br>
+  <%= f.number_field :score15, :size => 140 , value:0 , required: true %> <br>
+  <%= f.label :score16 %> <br>
+  <%= f.number_field :score16, :size => 140 , value:0 , required: true %> <br>
+  <%= f.label :score17 %> <br>
+  <%= f.number_field :score17, :size => 140 , value:0 , required: true %> <br>
+  <%= f.label :score18 %> <br>
+  <%= f.number_field :score18, :size => 140 , value:0 , required: true %> <br>
+ 
+  <%= f.label :good %> <br>
+  <%= f.text_area :good, :size => 140 %> <br>
+  <%= f.label :more %> <br>
+  <%= f.text_area :more, :size => 140 %> <br>
+  </div>
+  <%= f.submit "Tweetする" %>
+<% end %>
+<%= link_to "Tweet一覧に戻る", tweets_path %>
