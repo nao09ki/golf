@@ -10,7 +10,7 @@ class TweetsController < ApplicationController
   end
   def create
     tweet = Tweet.new(tweet_params)
-    #tweet.scoresum = (tweet.score1 + tweet.score2 + tweet.score3 + tweet.score4 + tweet.score5 + tweet.score6 + tweet.score7 + tweet.score8 + tweet.score9 + tweet.score10 + tweet.score11 + tweet.score12 + tweet.score13 + tweet.score14 + tweet.score15 + tweet.score16 + tweet.score17 + tweet.score18)
+    tweet.scoresum = (tweet.score1 + tweet.score2 + tweet.score3 + tweet.score4 + tweet.score5 + tweet.score6 + tweet.score7 + tweet.score8 + tweet.score9 + tweet.score10 + tweet.score11 + tweet.score12 + tweet.score13 + tweet.score14 + tweet.score15 + tweet.score16 + tweet.score17 + tweet.score18)
     if tweet.save
       redirect_to :action => "index"
     else
@@ -29,7 +29,7 @@ class TweetsController < ApplicationController
   def update
     tweet = Tweet.find(params[:id])
     if tweet.update(tweet_params)
-      #tweet.scoresum = (tweet.score1 + tweet.score2 + tweet.score3 + tweet.score4 + tweet.score5 + tweet.score6 + tweet.score7 + tweet.score8 + tweet.score9 + tweet.score10 + tweet.score11 + tweet.score12 + tweet.score13 + tweet.score14 + tweet.score15 + tweet.score16 + tweet.score17 + tweet.score18)
+      tweet.scoresum = (tweet.score1 + tweet.score2 + tweet.score3 + tweet.score4 + tweet.score5 + tweet.score6 + tweet.score7 + tweet.score8 + tweet.score9 + tweet.score10 + tweet.score11 + tweet.score12 + tweet.score13 + tweet.score14 + tweet.score15 + tweet.score16 + tweet.score17 + tweet.score18)
       tweet.save
       redirect_to :action => "show", :id => tweet.id
     else
